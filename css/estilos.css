@@ -1,0 +1,309 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Montserrat+Alternates|Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@500&family=Nunito:wght@300&display=swap');
+
+	*{
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+		font-family: 'Montserrat Alternates', sans-serif;
+		background: white;
+		color: #312d2d;
+	}
+	
+	.capa{
+		position: fixed;
+		width: 100%;
+		height: 100%;
+		z-index: -1;
+		top: 0;left: 0;
+	}
+	/*Estilos para el encabezado*/
+
+
+
+	.logo{
+		display: flex;
+		flex-wrap: nowrap;
+		position: fixed;
+		top: 0; 
+		left: 0;
+	}
+	
+
+	.nombre{
+		margin: 1vw 0 1vw 0;	
+		color: #2a2929;
+		font-size: 1.2vw;
+		font-weight: 400;
+	}
+
+	.openmenu{
+		cursor: pointer;
+		color: #2a2929;
+		font-size: 1.2vw;
+		margin: 1vw;
+	}
+
+
+	
+	/*Fin de estilos para el encabezado*/
+
+	/*Menù lateral*/
+	#btn-menu{
+		display: none;
+	}
+	
+	.container-menu{
+		position: fixed;
+		width: 275px;
+		height: 100vh;
+		top: 0;left: 0;
+		transition: all 500ms ease;
+		opacity: 0;
+		visibility: hidden;
+	}
+	#btn-menu:checked ~ .container-menu{
+		opacity: 1;
+		visibility: visible;
+	}
+	.cont-menu{
+		width: 100%;
+		max-width: 275px;
+		background: #1c1c1c;
+		height: 100vh;
+		position: fixed;
+		transition: all 500ms ease;
+		transform: translateX(-100%);
+	}
+	#btn-menu:checked ~ .container-menu .cont-menu{
+		transform: translateX(0%);
+	}
+	.cont-menu nav{
+		transform: translateY(15%);
+	}
+	.cont-menu nav a{
+		display: block;
+		text-decoration: none;
+		padding: 20px;
+		color: #c7c7c7;
+		border-left: 5px solid transparent;
+		transition: all 400ms ease;
+		background: #1c1c1c;
+		
+	}
+	.cont-menu nav a:hover{
+		border-left: 5px solid #c7c7c7;
+		background: #1f1f1f;
+	}
+	.cont-menu label{
+		position: absolute;
+		right: 5px;
+		top: 10px;
+		color: #fff;
+		cursor: pointer;
+		font-size: 18px;
+		background: #1c1c1c;
+	}
+	/*Fin de Menù lateral*/
+
+    /*Secciones*/
+
+
+    .seccion{
+        color: #fff;
+        margin: 5vw 0 0 28vw;
+		width: 40w;
+    }
+
+	.certificadosimg{
+		display: flex;
+		flex-wrap: nowrap;
+	}
+
+	.perfil{
+		width:28vw;
+		
+	}
+
+	.row{
+		margin-left: 2vw;
+		width: 10vw;
+		overflow: hidden;
+	}
+
+	.slider{
+		width: 300%;
+		display: flex;
+	}
+
+	.imgperfil{
+		width: 10vw;
+		height: 10vw;
+		border-radius: 0.2vw;
+		padding-bottom:0.5vw;
+	}
+
+    .titulo{
+        font-size: 2.6vw;
+        padding: 2vw 2vw 2vw 0;
+        color: rgb(92, 135, 148);
+		font-family: 'Fira Sans', sans-serif;
+    }
+
+    .info{
+        font-size: 1.6vw;
+        padding: 0.4vw;
+		width: 38vw;
+		font-family: 'Nunito', sans-serif;
+    }
+
+    .linea{
+        margin: 1vw 0 1vw 0;
+		width: 50vw;
+    }
+
+	.info2{
+        color: rgb(173, 161, 158);
+		font-style: oblique;
+    }
+
+	
+	.html{
+		width: 16vw;
+		height: 16vw;
+		border-radius: 0.4vw;
+		margin: 1vw;
+		cursor: pointer;
+	}
+	
+    /*Fin de Secciones*/
+
+
+	/*Lightbox*/
+
+	.imagengrande{
+		width: 90%;
+		max-width: 1000px;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		transition: opacity .4s ease;
+		
+	}
+
+	#cerrar_modal{
+		position: absolute;
+		top: 2%;
+		right: 2%;
+		color: #888181;
+		font-size: 3vw;
+		display: inline-block;
+		cursor: pointer;
+		background-color: rgba(0,0,0,0);
+	}
+
+	/*Fin de Lightbox*/
+
+
+	/*Media Query*/
+
+	@media all and (max-width:768px){
+		
+		/*Menù lateral*/
+
+		.openmenu{
+			font-size: 5vw;
+			margin: 3vw;
+			
+		}
+
+		.nombre{
+			display: none;
+		}
+		
+		.cont-menu{
+			max-width: 100%;
+		}
+
+		#btn-menu:checked ~ .container-menu{
+			opacity: 0.9;
+		}
+
+		.cont-menu nav a{
+			text-align: center;	
+			font-size: 5vw;
+		}
+
+		/*Fin de Menù lateral*/
+
+    	/*Secciones*/
+
+		.seccion{
+			color: #fff;
+			margin: 5vw 0 0 12vw;
+		}
+
+		.row{
+			margin-left: 2vw;
+			width: 20vw;
+		}
+	
+	
+		.imgperfil{
+			width: 20vw;
+			height: 20vw;
+		
+		}
+
+		.perfil{
+			width: 40vw;
+		}
+	
+		.titulo{
+			font-size: 8vw;
+		}
+	
+		.info{
+			font-size: 3vw;
+			
+		}
+	
+		.linea{
+			margin: 1vw 0 1vw 0;
+			width: 70vw;
+		}
+	
+		.info2{
+			font-size: 3vw;
+		}
+	
+		
+		.html{
+			width: 20vw;
+			height: 20vw;
+			margin-left: 5vw;	
+		}
+
+		/*Fin de Secciones*/
+
+		/*Lightbox*/
+
+		.imagengrande{
+			width: 90%;
+			max-width: 1000px;
+		}
+	
+		#cerrar_modal{
+			
+			top: 2%;
+			right: 3%;
+			font-size: 8.5vw;
+			
+		}
+
+		/*Fin de Lightbox*/
+
+	}
+
+	/*Fin de Media Query*/
