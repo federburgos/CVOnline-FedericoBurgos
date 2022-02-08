@@ -5,7 +5,9 @@ Proyecto de Curso
 Introducción al Desarrollo Web front end: HTML y CSS desde cero
 
 
+
 Concepto
+
 
 
 El concepto gira en torno a un sitio web enfocado en reunir la comunidad de un streamer para localizarlos y generar un espacio de pertenencia.
@@ -15,6 +17,8 @@ Dentro de las cualidades que el sitio web ofrece, existe el espacio nombrado “
 
                     
 Apartado Tecnico
+
+
 
 Al empezar apliqué un fondo de color que me permita redondear los bordes de las secciones. De esa manera evité preocuparme por generar espacios blancos.
 
