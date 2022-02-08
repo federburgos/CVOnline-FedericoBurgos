@@ -2,35 +2,30 @@
 Currículum Vitae Online
 
 Proyecto de Curso
-Introducción al Desarrollo Web front end: HTML y CSS desde cero
+Fundamentos de JavaScript
 
 
 
 Concepto
 
+El concepto gira en torno a un sitio web que cumpla la función de ser un curriculum vitae. Se busca que la página demuestre algunas de las habilidades que el mismo currículum señala.
+
+Dentro de las cualidades que el sitio web ofrece, existen diferentes secciones que señalan los diferentes campos que normalmente tendría un curriculum vitae.
 
 
-El concepto gira en torno a un sitio web enfocado en reunir la comunidad de un streamer para localizarlos y generar un espacio de pertenencia.
-Dentro de las cualidades que el sitio web ofrece, existe el espacio nombrado “Comunidad”, el mismo cumpliría el rol de foro para generar interrelaciones entre seguidores sin participación directa del streamear. A la vez se busca captar la atención de los seguidores en busca de que permanezcan utilizando el sitio web, de manera tal que se pone a disposición tópicos de interés para la comunidad, en este caso noticias relacionadas al contenido que ofrece el streamer. Sumado a todo lo anterior también posee el apartado nombrado como “Tienda” donde como se da a entender por su nombre, ofrecería la posibilidad de tener acceso al merchandising del streamear. 
-
-
-
-                    
 Apartado Tecnico
 
 
+En el lado superior izquierdo se puede observar un menú desplegable realizado mediante CSS, en el mismo hay diversos enlaces que dirigen a las diferentes secciones de la página.
 
-Al empezar apliqué un fondo de color que me permita redondear los bordes de las secciones. De esa manera evité preocuparme por generar espacios blancos.
+La maquetación es bastante sencilla, la misma está separada en tres partes, la primera responde al “Header” siendo donde se coloca el botón que despliega el menú. La segunda parte sería el menú en cuestión junto todos los enlaces, la tercera por último son las diversas secciones en cuestion.
 
-En el caso del menú, decidí separar el logo y el menú en dos “div” y utilizar la etiqueta “flex:row”  para alinearlos de manera tal que quede como en la imagen de referencia.
+En la primera sección llamada “Perfil” se encuentra un  “Slider” que enseña diferentes imágenes que cumplen como fotos de perfil. El mismo está realizado mediante JavaScript.
 
-Bajando a la sección de banner decidí utilizar una imagen de fondo con un contenedor “div” con el estilo de “flex:column” y centralice el contenido. Luego le agregue a los textos un “padding” y les coloque un fondo de color para darles el aspecto de tarjetas.
+En las siguientes secciones se pueden encontrar diferentes imágenes acompañando el texto, dichas imágenes se pueden agrandar al realizar click sobre ellas debido a el efecto “Ligthbox”. Al mismo tiempo se puede regresar a la vista previa clickeando en el icono superior derecho.
 
-En el apartado nombrado como “Noticia” aplique una combinación entre las etiquetas “Grid” con “Flex”. Además cree un “div” que funcione de tarjeta la cual le di un fondo y tamaño responsivo.
-
-Por último, para el footer, lo separe en tres secciones internas. Con la etiqueta “Flex:row” coloque un texto junto a unos logos y luego simplemente lo alinee al lado izquierdo. Para terminar, en la sección final del footer, solo coloque un texto y lo centre.
-
+Por último,  los enlaces del menú desplegable poseen un efecto de “Scroll Suave” realizado también mediante JavaScript para aportar más profesionalidad a la página.
 
 Como producto final obtuve este resultado
 
-https://kopla.surge.sh/
+cvfedericoburgos.000webhostapp.com
